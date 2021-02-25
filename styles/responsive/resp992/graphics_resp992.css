@@ -1,0 +1,52 @@
+/* Graphics for big tablet devices with at least 992x screen-width */
+@media only screen and (min-width: 992px) {
+    /* My Work! */
+    /* Adjusting position of graphics */
+    /* Digital Art! Graphics */
+    /* Astromoticons */
+    div#da_1-astro {
+        background-position: 0 30vh, -20vw 0; /* Two image here, so two background-positions */
+    }
+
+    /* Stay PAWsitive! */
+    div#da_2-paw {
+        background-position: -20vw 25%;
+    }
+
+    /* Thom-Ace */
+    div#da_3-destiny_2 {
+        background-position: -10vw 30%;
+    }
+
+    /* Video Game Photography! Graphics */
+    /* Planet's Secret */
+    div#vgp_1-astro {
+        background-position: -35vw 100%;
+    }
+
+    /* 4th July Photo Contest */
+    div#vgp_2-the_crew_2 {
+        background-position: -15vw 50%;
+    }
+
+    /* Turn */
+    div#vgp_3-the_crew_2 {
+        background-position: -15vw 50%;
+    }
+
+    /* 3D Animation! Graphics */
+    /* Retro Waves */
+    div#d3_ani_1-retro_waves {
+        background-position: -25vw 70%;
+    }
+
+    /* Abstract Plexus */
+    div#d3_ani_2-abstract_plexus {
+        background-position: -30vw 25%;
+    }
+
+    /* Moonlight Lake */
+    div#d3_ani_3-low_poly {
+        background-position: -30vw 0;
+    }
+}

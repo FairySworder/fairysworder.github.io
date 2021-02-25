@@ -1,0 +1,44 @@
+/* This flexbox.css stylesheet is imported by the main.css stylesheet and will focus on flexboxes of the webpage. */
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* My Work! */
+section#portfolio header.flex_header {
+    justify-content: center;
+}
+
+/* About me! */
+section#about_me div.flex_article {
+    align-items: center;
+}
+
+section#about_me div.flex_aside {
+    align-items: flex-start;
+}
+
+/* Contact me! */
+section#contact_me form fieldset div.flex_row {
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+section#contact_me div.flex_input {
+    flex-wrap: nowrap;
+    height: 5em;
+    width: 100%;
+    margin: 0.2em 0.5em;
+}
+
+section#contact_me div.flex_button {
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+}

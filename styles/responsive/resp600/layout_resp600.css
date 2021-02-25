@@ -1,0 +1,9 @@
+/* Layout for mobile devices up to 600px screen-width */
+@media only screen and (max-width: 600px) {
+    /* Contact me! */
+    /* Buttons */
+    section#contact_me div.container button {
+        width: 50vw;
+        height: 3em;
+    }
+}

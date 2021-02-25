@@ -1,0 +1,159 @@
+/*
+This animation.css stylesheet is imported by the main.css stylesheet and will focus on animating (and transition) some parts of the webpage.
+Animations and transitions that mainly affect typo properties are in type.css.
+*/
+
+/* Header | Animating text-box. Hover up and down */
+header#home div.text_over_image {
+    animation-name: hoverToI;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+    /* Animation keyframes for the text-box in the header */
+    @keyframes hoverToI {
+        0% { transform: translate(-50%, -45%); }
+        100% {transform: translate(-50%, -55%); }
+    }
+
+/* My Work! */
+/* Set height of showcase divs. Divs to create a shape and space for the images -^w^- */
+div.pic_showcase {
+    height: 25vh;
+    /* Transition height, clip-path, transform and filter on mouse over and mouse click showcase */
+    transition: height 1s ease, max-height 1s ease, clip-path 1s ease, transform 1s ease, filter 1s ease;
+}
+/* Transition the paragraph directly after a pic_showcase graphic (subsequent-sibling combinator) */
+    div.pic_showcase + p {
+        filter: brightness(60%) saturate(50%) blur(1px);
+        /* Transition filter */
+        transition: filter 1s ease;
+    }
+    /* Transition height, transform and filter of pic_showcase on mouse over */
+    div.pic_showcase:hover {
+        height: 50vh;
+        filter: brightness(100%) saturate(100%) blur(0px);
+    }
+
+        /* Transition the paragraph directly after a pic_showcase graphic on mouse over graphic */
+        div.pic_showcase:hover + p {
+            filter: brightness(100%) saturate(100%) blur(0px);
+        }
+            /* Transition the paragraph directly after a pic_showcase graphic on mouse over paragraph */
+            div.pic_showcase + p:hover {
+                filter: brightness(100%) saturate(100%) blur(0px);
+}
+
+/* Showcase div | clip path: polygon() for the special shape of the div */
+/* First of 3 images in the showcase */
+div.pic_showcase_1 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+    /* Transition clip-path on mouse over first image */
+    div.pic_showcase_1:hover {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+    }
+/* Second of 3 images in the showcase */
+div.pic_showcase_2 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+    /* Transition clip-path on mouse over second image */
+    div.pic_showcase_2:hover {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+    }
+/* Third of 3 images in the showcase */
+div.pic_showcase_3 {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+    /* Transition clip-path on mouse over third image */
+    div.pic_showcase_3:hover {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+    }
+
+/* About me! */
+/* Graphic in main part of article */
+section#about_me article img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 10% 70%);
+    filter: brightness(80%) contrast(90%) saturate(80%);
+    /* Transition clip-path and filter on mouse over graphic in main part of article */
+    transition: filter 1s ease, clip-path 1s ease;
+}
+    /* Transition clip-path and filter on mouse over graphic in main article */
+    section#about_me article img:hover {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        filter: brightness(100%) contrast(100%) saturate(100%);
+    }
+/* Aside | Transition border-color and filter on mouse over aside */
+section#about_me article aside {
+    border: 5px solid rgb(235, 200, 90);
+    filter: brightness(80%) saturate(80%) opacity(0.5);
+    /* Transition border-color and filter on mouse over aside */
+    transition: filter 0.5s ease, border-color 0.5s ease;
+}
+    /* Transition border-color and filter on mouse over aside */
+    section#about_me article aside:hover {
+        border: 5px solid rgb(140, 230, 240);
+        filter: brightness(100%) saturate(100%) opacity(1); /* Highlight on mouse over asides */
+    }
+
+
+/* Contact me! */
+/* Input */
+section#contact_me input {
+    background-color: var(--c-brightpurple, rgb(90, 70, 100));
+    border: 3px solid var(--c-staryellow, rgb(235, 200, 90));
+    /* Transition background-color, border-color and transform on mouse over and focus input */
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+    /* Transition background-color, border-color and transform on mouse over input */
+    section#contact_me input:hover {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }
+    /* Transition background-color, border-color and transform on focus input */
+    section#contact_me input:focus {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }
+
+/* Textarea */
+section#contact_me textarea {
+    background-color: var(--c-brightpurple, rgb(90, 70, 100));
+    border: 3px solid var(--c-staryellow, rgb(235, 200, 90));
+    /* Transition background-color, border-color and transform on mouse over and focus textarea */
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+    /* Transition background-color, border-color and transform on mouse over textarea */
+    section#contact_me textarea:hover {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }
+    /* Transition background-color, border-color and transform on focus textarea */
+    section#contact_me textarea:focus {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }
+/* Buttons */
+section#contact_me button {
+    background-color: var(--c-brightpurple, rgb(90, 70, 100));
+    border: 3px solid rgb(235, 200, 90);
+    /* Transition background-color, border-color and transform on mouse over and focus button */
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+    /* Transition background-color, border-color and transform on mouse over button */
+    section#contact_me button:hover {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }
+    /* Transition background-color, border-color and transform on focus button */
+    section#contact_me button:focus {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+        border: 3px solid rgb(140, 230, 240);
+        transform: scale(1.05, 1.05);
+    }

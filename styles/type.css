@@ -1,0 +1,141 @@
+/* This type.css stylesheet is imported by the main.css stylesheet and will focus on styling the text of the webpage. */
+
+/* Importing fonts from Google Fonts*/
+/* #1 Font: Press Start 2P */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* #2 Font: VT323 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* #3 Font(s): IBM Plex Mono Regular 400 (italic), Medium 500 (italic), Semi-bold 600 (italic) */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* #4 Font: Major Mono Display */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+/* #5 Font: Overpass Mono Regular 400, Semi-bold 600, Bold 700 */
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;600;700&display=swap');
+/* #6 Font: Space Mono Regular 400 (italic), Bold 700 (italic) */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Assigning the general look of text in the page */
+body {
+    font-family: "IBM Plex Mono", "Overpass Mono", "Space Mono", monospace;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    word-break: initial;
+    color: var(--c-staryellow, rgb(235, 200, 90));
+}
+/* Back to top paragraphs */
+p.btt {
+    font-size: 0.9em;
+    opacity: 0.5;
+    /* Transition opacity on mouse over btt */
+    transition: opacity 0.2s ease;
+}
+    p.btt:hover {
+        opacity: 0.8;
+    }
+
+/* Background-color when selecting text */
+::selection {
+    background-color: rgb(238, 238, 238);
+}
+/* Headings | Set general defaults */
+h1, h2, h3 {
+    font-family: "Press Start 2P", VT323, "Major Mono Display", monospace;
+    font-weight: 400;
+}
+
+    h1 {
+        font-size: 2em;
+        word-break: break-all;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+/* Links | Set general defaults */
+a:link {
+    color: var(--c-lightblue, rgba(95, 180, 180, 1));
+    text-decoration: none;
+    border-bottom: 4px solid rgba(140, 230, 240, 0);
+    /* Transition color */
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+a:visited {
+    color: var(--c-lightblue, rgba(95, 180, 180, 1));
+}
+
+a:hover {
+    color: var(--c-brightblue, rgba(140, 230, 240, 1));
+    border-bottom: 4px solid var(--c-brightblue, rgba(140, 230, 240, 1));
+}
+
+a:active {
+    color: var(--c-brightredpink, rgba(235, 200, 200, 1));
+    border-bottom: 4px solid var(--c-brightredpink, rgba(235, 200, 200, 1));
+}
+
+/* Navigation */
+nav ul {
+    font-family: VT323, "Press Start 2P", "IBM Plex Mono", monospace;
+    font-size: 1.5em;
+    text-align: center;
+}
+    /* Transition transform on mouse over li */
+    nav ul li:hover > a {
+        transform: scale(1.1);
+    }
+
+        nav ul li a:link {
+            text-decoration: none;
+            border-bottom: none;
+            /* Transition color, transform and text-shadow on mouse over and active link */
+            transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+        }
+        /* Transition color and text-shadow on mouse over link */
+        nav ul li a:hover {
+            color: var(--c-brightblue, rgba(140, 230, 240, 1));
+            text-shadow: rgba(140, 230, 240, 0.8) 0 0 0.5em; /* Glow effect */
+        }
+        /* Transition color and text-shadow on active link */
+        nav ul li a:active {
+            color: var(--c-brightredpink, rgba(235, 200, 200, 1));
+            text-shadow: rgba(235, 200, 200, 0.8) 0 0 0.5em; /* Glow effect */
+        }
+            /* Second link in nav | Always highlight with an other color */
+            nav ul li:nth-child(3) a {
+                color: rgba(140, 230, 240, 1);
+            }
+            /* Transition color on active second link */
+            nav ul li:nth-child(3) a:active {
+                color: var(--c-brightredpink, rgba(235, 200, 200, 1));
+
+            }
+
+/* About me! */
+/* Paragraphs and ul in asides */
+section#about_me article p, ul {
+    text-align: left;
+    word-break: initial;
+}
+
+/* Contact me! */
+/* Form */
+section#contact_me form {
+    text-align: left;
+}
+/* Input, Textarea and button */
+section#contact_me input, textarea, button {
+    font-family: "IBM Plex Mono", "Overpass Mono", "Space Mono", monospace;
+    color: rgb(235, 200, 90);
+}
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+}

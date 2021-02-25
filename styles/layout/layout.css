@@ -1,0 +1,145 @@
+/* This layout.css stylesheet is imported by the main.css stylesheet and will focus on the layout of main components of the webpage. */
+/* Body */
+body {
+    background-color: var(--c-deepviolet, rgb(40, 30, 50));
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+    overflow: auto;
+}
+
+/* About me */
+img#im {
+    display: none;
+}
+
+/* Container for each main segment of the webpage */
+.container {
+    width: 100%;
+}
+
+.section_padding {
+    padding: 2em;
+}
+
+/* Header */
+header#home {
+    position: relative; /* Make relative so div#darken-background-image (absolute) has a reference point */
+}
+
+    header#home #header_img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header#home #darken-background-image {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* Format text-box in header */
+    header#home div.text_over_image {
+        /* Create text-box with border */
+        width: 100%;
+        border: 5px solid var(--c-staryellow, rgb(235, 200, 90));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    height: 100%;
+    padding-left: 0;
+}
+    /* Horizontal Line in the navigation */
+    nav ul li hr {
+        border-top: 5px solid var(--c-staryellow, rgb(235, 200, 90));
+        width: 80%;
+    }
+
+/* My Work! */
+section#portfolio h2 {
+    margin-top: 0;
+    padding-top: 2em;
+}
+/* Header center content */
+section#portfolio header {
+    height: 25vh;
+}
+
+section#portfolio {
+    background-color: var(--c-redpurple, rgb(55, 40, 65));
+}
+    /* My Digital Art Section */
+    section#portfolio section#DA_sect {
+        background-color: var(--c-redpurple, rgb(55, 40, 65));
+    }
+    /* My Video Game Photography Section */
+    section#portfolio section#vgp_sect {
+        background-color: var(--c-pinkredpurple, rgb(60, 35, 65));
+    }
+    /* My 3D Animation Section */
+    section#portfolio section#d3_ani_sect {
+        background-color: var(--c-darkbluegreen, rgb(40, 70, 70));
+    }
+
+    section#portfolio p.flex_text {
+        padding: 0 2em;
+    }
+
+/* About Me! */
+section#about_me {
+    background-color: var(--c-brightpurple, rgb(90, 70, 100));
+}
+
+    section#about_me article.article_grid  div.grid_content2 p {
+        width: 50%;
+        padding-right: 2em;
+    }
+
+    section#about_me div.flex_aside aside {
+        max-width: 400px;
+        margin: 1em 0.5em;
+    }
+
+/* Contact me! */
+section#contact_me {
+    background-color: var(--c-pasteldarkgreen, rgb(80, 110, 110));
+}
+    /* Form and fieldset */
+    section#contact_me form, fieldset {
+        border: 3px solid var(--c-staryellow, rgb(235, 200, 90));
+        padding: 1em;
+    }
+
+    section#contact_me fieldset ~ fieldset {
+        margin-top: 1em;
+    }
+        section#contact_me label {
+            padding-bottom: 0.5em;
+        }
+        /* Input in the form */
+        section#contact_me input {
+            height: 2em;
+            width: 80%;
+            padding: 0.2em;
+        }
+
+        section#contact_me textarea {
+            width: 80%;
+            margin-top: 0.5em;
+        }
+
+    /* Buttons */
+    section#contact_me button {
+        width: 50vw;
+        min-height: 3em;
+        margin: 1em 1em 1em 0;
+    }

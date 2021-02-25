@@ -1,0 +1,48 @@
+/* Layout for big tablet devices up to 992x screen-width */
+@media only screen and (min-width: 992px) {
+    /* Don't display back to top paragraphs */
+    p.btt {
+        display: none;
+    }
+
+    /* Header */
+    header#home div.container div.text_over_image {
+        width: 50vw;
+    }
+
+    /* Navigation */
+    div.nav_container {
+        min-height: 100vh;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+        nav ul {
+            margin: 0;
+        }
+
+    /* About me */
+    section div article div img#im {
+        display: flex;
+    }
+
+    /* Contact me! */
+    section#contact_me div.flex_input {
+        width: auto;
+    }
+
+        section#contact_me label {
+            max-width: 450px;
+        }
+
+        section#contact_me input {
+            height: 1.5em;
+        }
+    /* Buttons */
+    section#contact_me button {
+        width: 25vw;
+    }
+}

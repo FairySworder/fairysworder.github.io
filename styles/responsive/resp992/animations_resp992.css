@@ -1,0 +1,40 @@
+/* Animations for big tablet devices with at least 992x screen-width */
+@media only screen and (min-width: 992px) {
+    /* Navigation */
+    nav ul li {
+        filter: blur(5px);
+        /* Transition filter */
+        transition: filter 0.6s ease;
+    }
+        /* Transition filter on mouse over */
+        nav ul li:hover {
+            filter: blur(0px);
+        }
+
+    /* My Work! */
+    /* Showcase div | clip path: polygon() for the special shape of the div */
+    /* First of 3 images in the showcase */
+    div.pic_showcase_1 {
+        clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+        /* Transition clip-path on mouse over first image */
+        div.pic_showcase_1:hover {
+            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+        }
+    /* Second of 3 images in the showcase */
+    div.pic_showcase_2 {
+        clip-path: polygon(0% 0%, 75% 0%, 60% 50%, 75% 100%, 0% 100%);
+    }
+        /* Transition clip-path on mouse over second image */
+        div.pic_showcase_2:hover {
+            clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+        }
+    /* Third of 3 images in the showcase */
+    div.pic_showcase_3 {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+    }
+        /* Transition clip-path on mouse over third image */
+        div.pic_showcase_3:hover {
+            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+        }
+}

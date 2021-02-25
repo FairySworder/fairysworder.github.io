@@ -1,0 +1,111 @@
+/* This grid.css stylesheet is imported by the main.css stylesheet and will focus on the grid layout of the webpage. */
+/* Navigation and content of webpage on top of each other */
+#content-nav_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
+}
+    nav.grid_content1 {
+        grid-area: nav;
+    }
+
+    main.grid_content2 {
+        grid-area: main;
+    }
+
+    footer.grid_content3 {
+        grid-area: footer;
+    }
+
+/* Portfolio */
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "header"
+                         "picture1"
+                         "pic_text1"
+                         "picture2"
+                         "pic_text2"
+                         "picture3"
+                         "pic_text3"
+                         "btt";
+}
+
+    section#portfolio header.grid_content1 {
+        grid-area: header;
+    }
+
+    section#portfolio div.grid_content2 {
+        grid-area: picture1;
+    }
+
+    section#portfolio p.grid_content3 {
+        grid-area: pic_text1;
+    }
+
+    section#portfolio div.grid_content4 {
+        grid-area: picture2;
+    }
+
+    section#portfolio p.grid_content5 {
+        grid-area: pic_text2;
+    }
+
+    section#portfolio div.grid_content6 {
+        grid-area: picture3;
+    }
+
+    section#portfolio p.grid_content7 {
+        grid-area: pic_text3;
+    }
+    section#portfolio p.grid_content8 {
+        grid-area: btt;
+    }
+
+/* About me! */
+/* About me layout */
+section#about_me div.about_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "heading"
+                         "article"
+                         "btt";
+}
+
+    section#about_me h2.grid_content1 {
+        grid-area: heading;
+    }
+
+    section#about_me article.grid_content2 {
+        grid-area: article;
+    }
+
+    section#about_me p.grid_content3 {
+        grid-area: btt;
+    }
+/* About me article layout */
+section#about_me article.article_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "header"
+                         "article"
+                         "aside";
+}
+
+    section#about_me header.grid_content1 {
+        grid-area: header;
+    }
+
+    section#about_me div.grid_content2 {
+        grid-area: article;
+    }
+
+    section#about_me div.grid_content3 {
+        grid-area: aside;
+    }

@@ -1,0 +1,90 @@
+/* This graphics.css stylesheet is imported by the main.css stylesheet and will focus on styling the graphics of the webpage. */
+
+/* Header */
+header#home div#header_img {
+    background-color: var(--c-pasteldarkgreen, rgb(80, 110, 110)); /* Fallback background-colour to preserve the logical structure of the webpage */
+    background-image: url("../graphics/avatar-fairysworder.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: 50% 50%;
+    filter: brightness(60%) saturate(50%) blur(5px);
+}
+
+    /* Header dark layer above header image */
+    header#home #darken-background-image {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(60, 10, 70, 0.3);
+        filter: blur(5px);
+        /* Transition background-color on mouse over dark layer*/
+        transition: background-color 1s ease;
+    }
+        /* Transition background-color on mouse over dark layer */
+        header#home #darken-background-image:hover {
+            background-color: rgba(60, 10, 70, 0.1);
+        }
+
+/* My Work! */
+/* Set defaults for the pic_showcase class. Background-position must be adjusted manually for each graphic. */
+div.pic_showcase {
+    background-color: var(--c-pasteldarkgreen, rgb(80, 110, 110)); /* Fallback background-colour to preserve the logical structure of the webpage */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    filter: brightness(60%) saturate(50%) blur(5px);
+}
+
+/* Digital Art! Graphics */
+/* Astromoticons */
+div#da_1-astro {
+    background-image: url("../graphics/portfolio/da_1-astro.png"), url("../graphics/portfolio/da_1-astro2.png");
+    background-size: contain, cover; /* Adjusting background-size here because there are 2 images instead of only 1 */
+    background-position: 0 25vh, 45% 0; /* Two images here, so two background-positions */
+}
+/* Stay PAWsitive! */
+div#da_2-paw {
+    background-image: url("../graphics/portfolio/da_2-paw.png");
+    background-position: center;
+}
+/* Thom-Ace */
+div#da_3-destiny_2 {
+    background-image: url("../graphics/portfolio/da_3-destiny_2.jpg");
+    background-position: 20% 0;
+}
+/* Video Game Photography! Graphics */
+/* Planet's Secret */
+div#vgp_1-astro {
+    background-image: url("../graphics/portfolio/vgp_1-astro.jpg");
+    background-position: center;
+}
+/* 4th July Photo Contest */
+div#vgp_2-the_crew_2 {
+    background-image: url("../graphics/portfolio/vgp_2-the_crew_2.jpg");
+    background-position: 27% 0;
+}
+/* Turn */
+div#vgp_3-the_crew_2 {
+    background-image: url("../graphics/portfolio/vgp_3-the_crew_2.jpg");
+    background-position: 45% 0;
+}
+/* 3D Animation! Graphics */
+/* Retro Waves */
+div#d3_ani_1-retro_waves {
+    background-image: url("../graphics/portfolio/3d_ani_1-retro_waves.png");
+    background-position: 30% 0;
+}
+/* Abstract Plexus */
+div#d3_ani_2-abstract_plexus {
+    background-image: url("../graphics/portfolio/3d_ani_2-abstract_plexus.png");
+    background-position: center;
+}
+/* Moonlight Lake */
+div#d3_ani_3-low_poly {
+    background-image: url("../graphics/portfolio/3d_ani_3-low_poly.png");
+    background-position: 51% 0;
+}

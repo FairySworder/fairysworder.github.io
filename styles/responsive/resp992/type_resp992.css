@@ -1,0 +1,8 @@
+/* Typo for big tablet devices with at least 992x screen-width */
+@media only screen and (min-width: 992px) {
+    /* My Work! */
+    /* Text next to the image */
+    section#portfolio p.flex_text {
+        text-align: left;
+    }
+}

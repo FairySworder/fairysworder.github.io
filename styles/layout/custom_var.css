@@ -1,0 +1,15 @@
+/* This custom_var.css stylesheet is imported by the main.css stylesheet and will declare CSS custom properties (variables) for the style of this webpage. */
+/* Custom var throughout the website */
+:root {
+    /* Declaring color variables */
+    --c-deepviolet: rgb(40, 30, 50);
+    --c-staryellow: rgb(235, 200, 90);
+    --c-redpurple: rgb(55, 40, 65);
+    --c-pinkredpurple: rgb(60, 35, 65);
+    --c-darkbluegreen: rgb(40, 70, 70);
+    --c-brightpurple: rgb(90, 70, 100);
+    --c-pasteldarkgreen: rgb(80, 110, 110);
+    --c-lightblue: rgba(95, 180, 180, 1);
+    --c-brightblue: rgba(140, 230, 240, 1);
+    --c-brightredpink: rgba(235, 200, 200, 1);
+}
