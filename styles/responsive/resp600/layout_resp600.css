@@ -1,9 +1,17 @@
-/* Layout for mobile devices up to 600px screen-width */
-@media only screen and (max-width: 600px) {
+/* Layout for mobile devices with at least 600px screen-width */
+@media only screen and (min-width: 600px) {
     /* Contact me! */
     /* Buttons */
     section#contact_me div.container button {
         width: 50vw;
         height: 3em;
+    }
+}
+
+/* Layout for mobile devices up to 600px screen-width */
+@media only screen and (max-width: 600px) {
+    /* About me */
+    section#about_me div article.article_grid div.flex_article p {
+        width: 100%;
     }
 }

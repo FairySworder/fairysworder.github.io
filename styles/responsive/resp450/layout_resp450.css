@@ -1,0 +1,7 @@
+/* Layout for mobile devices up to 450px screen-width */
+@media only screen and (max-width: 450px) {
+    /* About me */
+    section#about_me div article.article_grid div.flex_article p {
+        width: 100%;
+    }
+}

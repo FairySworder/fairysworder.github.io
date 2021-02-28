@@ -1,0 +1,6 @@
+/* Typo for mobile devices up to 450px screen-width */
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 0.95em;
+    }
+}

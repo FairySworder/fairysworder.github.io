@@ -42,49 +42,49 @@ div.pic_showcase {
 /* Digital Art! Graphics */
 /* Astromoticons */
 div#da_1-astro {
-    background-image: url("../graphics/portfolio/da_1-astro.png"), url("../graphics/portfolio/da_1-astro2.png");
+    background-image: url("../graphics/portfolio/da/da_1-astro.png"), url("../graphics/portfolio/da/da_1-astro2.png");
     background-size: contain, cover; /* Adjusting background-size here because there are 2 images instead of only 1 */
     background-position: 0 25vh, 45% 0; /* Two images here, so two background-positions */
 }
 /* Stay PAWsitive! */
 div#da_2-paw {
-    background-image: url("../graphics/portfolio/da_2-paw.png");
+    background-image: url("../graphics/portfolio/da/da_2-paw.jpg");
     background-position: center;
 }
 /* Thom-Ace */
 div#da_3-destiny_2 {
-    background-image: url("../graphics/portfolio/da_3-destiny_2.jpg");
+    background-image: url("../graphics/portfolio/da/da_3-destiny_2.jpg");
     background-position: 20% 0;
 }
 /* Video Game Photography! Graphics */
 /* Planet's Secret */
 div#vgp_1-astro {
-    background-image: url("../graphics/portfolio/vgp_1-astro.jpg");
+    background-image: url("../graphics/portfolio/vgp/vgp_1-astro.jpg");
     background-position: center;
 }
 /* 4th July Photo Contest */
 div#vgp_2-the_crew_2 {
-    background-image: url("../graphics/portfolio/vgp_2-the_crew_2.jpg");
+    background-image: url("../graphics/portfolio/vgp/vgp_2-the_crew_2.jpg");
     background-position: 27% 0;
 }
 /* Turn */
 div#vgp_3-the_crew_2 {
-    background-image: url("../graphics/portfolio/vgp_3-the_crew_2.jpg");
+    background-image: url("../graphics/portfolio/vgp/vgp_3-the_crew_2.jpg");
     background-position: 45% 0;
 }
 /* 3D Animation! Graphics */
 /* Retro Waves */
 div#d3_ani_1-retro_waves {
-    background-image: url("../graphics/portfolio/3d_ani_1-retro_waves.png");
+    background-image: url("../graphics/portfolio/3d_ani/3d_ani_1-retro_waves.jpg");
     background-position: 30% 0;
 }
 /* Abstract Plexus */
 div#d3_ani_2-abstract_plexus {
-    background-image: url("../graphics/portfolio/3d_ani_2-abstract_plexus.png");
+    background-image: url("../graphics/portfolio/3d_ani/3d_ani_2-abstract_plexus.jpg");
     background-position: center;
 }
 /* Moonlight Lake */
 div#d3_ani_3-low_poly {
-    background-image: url("../graphics/portfolio/3d_ani_3-low_poly.png");
+    background-image: url("../graphics/portfolio/3d_ani/3d_ani_3-low_poly.jpg");
     background-position: 51% 0;
 }
